@@ -1,0 +1,13 @@
+
+body{
+	margin: 10;
+	padding: 0.4 0.4 0.4 0.4;
+	color: #000;
+	background: #efefef;
+	font: normal 'Arimo', arial, verdana, sans-serif;
+}
+
+#message {
+	font-size: 2em;
+	text-align: center;
+}

@@ -9,12 +9,13 @@ import play.api.Logger
 /**
  * Basic module component for proof of concept.
  * 
- * Logs and returns a string message unchanged.
+ * Logs and returns a string message plus appended current date.
  */
 trait Psmod1Component {
   def wave (message : String) : String = {
-    Logger.debug(s"Psmod1Component waving $message")
-    message
+    val currentDate = new java.util.Date()
+    Logger.debug(s"Psmod1Component waving $message at ${currentDate}")
+    message + " - " + currentDate
   }
 }
 

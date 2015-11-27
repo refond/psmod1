@@ -2,6 +2,8 @@ logs
 target
 /.idea
 /.idea_modules
+/.cache-main
+/.cache-tests
 /.classpath
 /.project
 /.settings

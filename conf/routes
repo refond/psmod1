@@ -1,3 +1,0 @@
-
-# Import psmod1.routes defined - Should be performed in Play application importing the current module.
--> /psmod1 psmod1.Routes

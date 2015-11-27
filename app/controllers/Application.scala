@@ -2,8 +2,8 @@ package controllers
 
 import play.api._
 import play.api.mvc._
-
 import javax.inject.Inject
+import com.escalesoft.psmod1.Psmod1Component
 
 /**
  * Constructor injection of Psmod1Component

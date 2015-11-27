@@ -1,4 +1,4 @@
-package controllers
+package com.escalesoft.psmod1
 
 import play.api.Configuration
 import play.api.Environment

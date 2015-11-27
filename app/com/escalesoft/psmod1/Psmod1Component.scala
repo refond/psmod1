@@ -1,4 +1,4 @@
-package controllers
+package com.escalesoft.psmod1
 
 import javax.inject.Inject
 import play.api.inject.ApplicationLifecycle

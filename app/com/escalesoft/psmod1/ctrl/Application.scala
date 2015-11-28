@@ -1,4 +1,4 @@
-package com.escalesoft.psmod1.controllers
+package com.escalesoft.psmod1.ctrl
 
 import play.api._
 import play.api.mvc._

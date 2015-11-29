@@ -2,7 +2,7 @@ name := """psmod1"""
 
 organization := """com.escalesoft"""
 
-version := "1.0-SNAPSHOT"
+version := "0.0.2-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 

@@ -2,11 +2,14 @@ name := """psmod1"""
 
 organization := """com.escalesoft"""
 
-version := "0.0.2-SNAPSHOT"
+version := "0.0.3-SNAPSHOT"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val root = (project in file(".")).enablePlugins(PlayScala).disablePlugins(PlayLayoutPlugin)
 
 scalaVersion := "2.11.7"
+
+// Provides support for Maven style project sources organisation (src/main/scala src/main/java src/main/resources ...)
+//scalaSource in Compile := baseDirectory.value / "src"
 
 libraryDependencies ++= Seq(
   jdbc,

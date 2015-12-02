@@ -6,11 +6,8 @@
 GET     /                           com.escalesoft.psmod1.ctrl.Application.index
 
 # Map static resources from the /public folder to the /assets URL path
-
-# WORKING: standard controllers.Assets
-#GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
-
-# FAILING with: type Psmod1Assets is not a member of package com.escalesoft.psmod1.ctrl
+# Fixed with: type Psmod1Assets being a class NOT an object.
 # Followed instructions found at: https://www.playframework.com/documentation/2.4.x/SBTSubProjects#Assets-and-controller-classes-should-be-all-defined-in-the-controllers.admin-package
+# which currently indicates `object` instead of `class`
 GET     /assets/*file               com.escalesoft.psmod1.ctrl.Psmod1Assets.versioned(path="/public", file: Asset)
 

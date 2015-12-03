@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           com.escalesoft.psmod1.controllers.Application.index
+
+# Map static resources from the /public folder to the /assets URL path
+# Uses module specific Assets class
+GET     /assets/*file               com.escalesoft.psmod1.controllers.Assets.versioned(path="/public", file: Asset)
+

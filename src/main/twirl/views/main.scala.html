@@ -5,13 +5,13 @@
 <html lang="en">
     <head>
         <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
-        <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
+        <link rel="stylesheet" media="screen" href="@com.escalesoft.psmod1.controllers.routes.Assets.versioned("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@com.escalesoft.psmod1.controllers.routes.Assets.versioned("images/favicon.png")">
+        <script src="@com.escalesoft.psmod1.controllers.routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
     </head>
     <body>
     	<div id="message">
-    	psmod1 favicon: <img src="@routes.Assets.versioned("images/favicon.png")"></img> <br />
+    	psmod1 favicon: <img src="@com.escalesoft.psmod1.controllers.routes.Assets.versioned("images/favicon.png")"></img> <br />
         @content
         </div>
     </body>

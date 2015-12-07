@@ -8,11 +8,11 @@ GET     /                           com.escalesoft.psmod1.controllers.Applicatio
 # Map static resources from the /public folder to the /assets URL path
 # Works fine with psmod1.routes and routes defined although might break while actually used in `master` application.
 #                                                                      /public/lib/myModule
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+#GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 # Fails with: type Assets is not a member of package com.escalesoft.psmod1.controllers
 #                                                                                             /public/lib/myModule
-#GET     /assets/*file               com.escalesoft.psmod1.controllers.Assets.versioned(path="/public", file: Asset)
+GET     /assets/*file               com.escalesoft.psmod1.controllers.Psmod1Assets.versioned(path="/public", file: Asset)
 
 # Fails with: type Assets is not a member of package controllers.psmod1
 #                                                                              /public/lib/myModule
